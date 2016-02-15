@@ -29,6 +29,13 @@ header {
     height: 350px; 
 }
 
+header.section {
+    height: 150px; 
+}
+header.section .fill {
+    background-position-y: 25%;
+}
+
 header .fill {
     width: 100%;
     height: 100%;
@@ -165,6 +172,11 @@ footer {
 
 .toggle {
     margin: 5px 5px 0 0;
+}
+
+.thumbnail>img.team-member-avatar {
+    height: 160px;
+    border-radius: 100%;
 }
 
 /* Responsive Styles */
