@@ -38,18 +38,18 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="/"  onclick = $("#menu-close").click(); >Micromundos</a>
+                <a href="#top"  onclick = $("#menu-close").click(); >Micromundos</a>
             </li>
             <li>
-                <a href="/" onclick = $("#menu-close").click(); >Home</a>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
             </li>
             <li>
-                <a href="/about/en/" onclick = $("#menu-close").click(); >Project</a>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
             </li>
         </ul>
     </nav>
 
-    <header>
+    <header id="top">
       <div class="fill" style="background-image:url('img/header.jpg');"></div>
     </header>
 
@@ -61,7 +61,7 @@
 
             <div class="col-lg-12">
                 <div class="page-header text-center">
-                  <h1>micromundos</h1>
+                  <h1 class="micromundos-title">micromundos</h1>
                   <h4>augmented building blocks</h4>
                 </div>
             </div>
@@ -147,6 +147,130 @@
 
         <hr>
 
+        <!-- About -->
+        <section id="about">
+          <div class="container">
+
+            <!-- Page Heading -->
+            <div class="row">
+              <div class="col-lg-12">
+                <h1 class="page-header micromundos-title">micromundos</h1> 
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <!-- Intro Content -->
+            <div class="row">
+              <div class="col-md-6">
+                <img class="img-responsive" src="http://chparsons.com.ar/img/puentes/kit3.jpg" alt="">
+              </div>
+              <div class="col-md-6">
+                <h1><small>Augmented Building Blocks</small></h1>
+                <hr>
+                <p><strong>Micromundos</strong> is a computational construction kit for children to learn about dynamical systems through tinkering and physical play, develop creative problem-solving and bridge the digital and physical worlds.</p>
+                <p>There are low-cost laptops for children to learn computation, but they are based on the personal computer (individual) and the GUI model (graphical user interface, purely digital, general purpose).</p> 
+                <p>Portable and low-cost devices are needed for children to develop creativity and systems thinking through Tangible-Computation based on a TUI model (tangible user interface, collaborative, hybrid physical-digital model of computation, special purpose).</p> 
+              </div>
+            </div>
+            <!-- /.row -->
+
+            <br>
+            <div class="row">
+              <div class="col-lg-12">
+                <hr> 
+                <img class="pull-left img-responsive" src="http://chparsons.com.ar/img/puentes/idea.jpg">
+                <div>
+                  <br>
+                  <p>+ Building Blocks</p>
+                  <p>+ Computational Simulations</p>
+                  <p>+ 3D Camera-Projector Technology</p>
+                </div>
+              </div>
+            </div>
+            <hr> 
+            <!-- /.row -->
+
+            <div class="row">
+
+              <div class="col-lg-12">
+                <h2 class="page-header">Team</h2>
+              </div>
+
+              <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                  <img class="img-responsive team-member-avatar" src="https://lh3.googleusercontent.com/-jmHe_mRmJs8/AAAAAAAAAAI/AAAAAAAAAQE/7l0xRQOw_tM/s360-c-k-no/photo.jpg">
+                  <div class="caption">
+                    <h3>Christian Parsons<br>
+                      <small>Director</small>
+                    </h3>
+                    <ul class="list-inline">
+                      <li><a href="http://chparsons.com.ar/" target="_blank"><i class="fa fa-2x fa-external-link"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                  <img class="img-responsive team-member-avatar" src="https://mozillians.org/media/uploads/sorl-cache/b1/97/b1977bf5518bdd2cac7f2be6e27468f8.jpg">
+                  <div class="caption">
+                    <h3>Alvar Maciel<br>
+                      <small>Educator</small>
+                    </h3>
+                    <ul class="list-inline">
+                      <li><a href="//www.acercadelaeducacion.com.ar/" target="_blank"><i class="fa fa-2x fa-external-link"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                  <img class="img-responsive team-member-avatar" src="https://avatars3.githubusercontent.com/u/1520301?v=3&s=460">
+                  <div class="caption">
+                    <h3>Lolo<br>
+                      <small>Developer</small>
+                    </h3>
+                    <ul class="list-inline">
+                      <li><a href="//armdz.com/" target="_blank"><i class="fa fa-2x fa-external-link"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                  <img class="img-responsive team-member-avatar" src="http://www.pontura.com/images/works/agustin_pontura.png">
+                  <div class="caption">
+                    <h3>Agustin Pontura<br>
+                      <small>Designer</small>
+                    </h3>
+                    <ul class="list-inline">
+                      <li><a href="http://www.pontura.com/" target="_blank"><i class="fa fa-2x fa-external-link"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- /.row -->
+
+            <hr>
+
+            <div class="row">
+
+              <div class="col-lg-12">
+                <h3 class="page-header">Made in <a href="http://www.garagelab.cc" target="_blank"><img style="width: 140px; position: relative; top: -2px;" src="http://www.garagelab.cc/wordpress/wp-content/uploads/rfw/logo-research-17.png"></a>
+                </h2>
+              </div>
+
+            </div>
+            <!-- /.row -->
+
+          </div>
+          <!-- /.container -->
+        </section>
+
         <!-- Footer -->
         <footer>
         </footer>
@@ -162,15 +286,33 @@
 
     <!-- Custom Theme JavaScript -->
     <script>
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
     });
+
     // Opens the sidebar menu
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
     </script>
 

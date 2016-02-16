@@ -44,10 +44,10 @@ header .fill {
     background-size: cover;
 }
 
-.page-header h1 {
+.micromundos-title {
     font-family: 'Gibson', sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 56px;
 }
 
 .page-header h4 {
