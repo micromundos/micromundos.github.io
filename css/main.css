@@ -179,6 +179,11 @@ footer {
     border-radius: 100%;
 }
 
+.team-member-avatar-face {
+    -webkit-filter: grayscale(40%);
+    filter: grayscale(40%);
+}
+
 /* Responsive Styles */
 
 @media(max-width:991px) {
