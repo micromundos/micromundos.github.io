@@ -65,14 +65,15 @@
     <script>
 
     $.ajax({ 
-        url: '//ip-api.com/json/?callback=?',
+        url: '//freegeoip.net/json/?callback=?',
+        //url: '//ip-api.com/json/?callback=?',
         //url: '//ipinfo.io',
         type: 'GET',
-        dataType: 'jsonp',
-        timeout: 3000
+        dataType: 'jsonp'
+        //timeout: 3000
     })
     .done(function(res) {
-        var pais = res.countryCode && res.countryCode.toUpperCase();
+        var pais = res.country_code && res.country_code.toUpperCase();
         var continente = continentes[pais];
         var lang = pais && continente === 'SA' || pais === 'ES' ? 'ar' : 'en';
         $('.container').load( lang+'/index.html' );
