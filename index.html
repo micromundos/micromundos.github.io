@@ -65,13 +65,14 @@
     <script>
 
     $.ajax({ 
-        url: '//ipinfo.io',
+        url: 'http://ip-api.com/json/?callback=?',
+        //url: '//ipinfo.io',
         type: 'GET',
-        dataType: 'json',
+        dataType: 'jsonp',
         timeout: 3000
     })
     .done(function(res) {
-        var pais = res.country && res.country.toUpperCase();
+        var pais = res.countryCode && res.countryCode.toUpperCase();
         var continente = continentes[pais];
         var lang = pais && continente === 'SA' || pais === 'ES' ? 'ar' : 'en';
         $('.container').load( lang+'/index.html' );
