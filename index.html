@@ -51,6 +51,7 @@
 
     <!-- Page Content -->
     <div class="container">
+      <img class="img-responsive center-block spinner" src="./img/spinner.gif">
     </div><!-- /.container -->
 
     <script src="continentes.js"></script>
@@ -69,8 +70,8 @@
         //url: '//ip-api.com/json/?callback=?',
         //url: '//ipinfo.io',
         type: 'GET',
-        dataType: 'jsonp'
-        //timeout: 3000
+        dataType: 'jsonp',
+        timeout: 5000
     })
     .done(function(res) {
         var pais = res.country_code && res.country_code.toUpperCase();
