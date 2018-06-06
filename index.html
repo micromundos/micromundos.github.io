@@ -40,7 +40,6 @@
             <li class="sidebar-brand"><a href="#top"  onclick = $("#menu-close").click(); >Micromundos</a></li>
             <li><a href="#about" onclick = $("#menu-close").click(); >About</a></li>
             <li><a href="#team" onclick = $("#menu-close").click(); >Team</a></li>
-            <li><a href="#support" onclick = $("#menu-close").click(); >Support</a></li>
             <li><a href="#video" onclick = $("#menu-close").click(); >Video</a></li>
         </ul>
     </nav>
@@ -66,21 +65,21 @@
     <script>
 
     $.ajax({ 
-        url: '//freegeoip.net/json/?callback=?',
-        //url: '//ip-api.com/json/?callback=?',
+        url: '//ip-api.com/json/?callback=?',
+        //url: '//freegeoip.net/json/?callback=?',
         //url: '//ipinfo.io',
         type: 'GET',
         dataType: 'jsonp',
         timeout: 5000
     })
     .done(function(res) {
-        var pais = res.country_code && res.country_code.toUpperCase();
-        var continente = continentes[pais];
-        var lang = pais && continente === 'SA' || pais === 'ES' ? 'ar' : 'en';
-        $('.container').load( lang+'/index.html' );
+      var pais = res.countryCode && res.countryCode.toUpperCase();
+      var continente = continentes[pais];
+      var lang = pais && continente === 'SA' || pais === 'ES' ? 'ar' : 'en';
+      $('.container').load( lang+'/index.html' );
     })
     .fail( function(err) {
-        $('.container').load('en/index.html');
+      $('.container').load('en/index.html');
     });
 
     // Closes the sidebar menu
